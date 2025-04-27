@@ -1,0 +1,48 @@
+.slider-section {
+  height: 50dvh;
+  width: 100dvw;
+  max-height: 50dvh;
+  max-width: 100dvw;
+  background: #414141;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: 40px auto 40px;
+  max-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50dvh;
+  max-width: 100dvw;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+.chevron {
+  width: 30px;
+  user-select: none;
+  cursor: pointer;
+
+  &.right {
+    transform: rotate(180deg);
+  }
+}
+
+#slider-image {
+  max-height: 90%;
+  max-width: 100%;
+  object-fit: cover;
+}

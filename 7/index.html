@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="/src/styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>China tee</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="header-content">
+        <h2 class="heading">Сайт для любителей чая</h2>
+        <div class="text">
+          Первое упоминание о чае было найдено в китайских текстах, написанных
+          почти пять тысяч лет назад. Поэтому китайский чай считается источником
+          всех сортов чая, которые можно получить из чайного растения. Вначале
+          китайский чай использовался исключительно как лекарство. Со временем
+          он стал популярным напитком для знати и императоров, затем для
+          монахов, которые использовали его, чтобы обострить свой ум во время
+          медитации
+        </div>
+      </div>
+      <div class="header-content">
+        <img src="/nature/tea-field.png" />
+      </div>
+    </section>
+
+    <section class="goods">
+      <h2 class="heading">Чаи</h2>
+      <div id="tea"></div>
+    </section>
+
+    <section class="goods">
+      <h2 class="heading">Посуда</h2>
+      <div id="dishes"></div>
+    </section>
+
+    <section class="order">
+      <form class="form" id="form">
+        <h2 class="heading">Заказать</h2>
+        <input type="text" class="input" placeholder="Фио" name="fcs" />
+        <input type="text" class="input" placeholder="Телефон" name="phone" />
+        <button class="submitter" type="submit">Готово</button>
+      </form>
+    </section>
+
+    <section class="toast-root"></section>
+  </body>
+
+  <script type="module" src="/src/dishes.js"></script>
+  <script type="module" src="/src/tea.js"></script>
+  <script type="module" src="/src/form.js"></script>
+</html>

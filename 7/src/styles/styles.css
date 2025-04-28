@@ -1,0 +1,126 @@
+.heading {
+  width: 100%;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px 80px;
+  height: 70dvh;
+  max-width: 100%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+
+  & > img {
+    border-radius: 24px;
+  }
+
+  & > text {
+    font-size: 20px;
+  }
+}
+
+.goods {
+  display: grid;
+  grid-template-rows: 40px auto;
+  padding: 40px 80px;
+  max-width: 100dvw;
+}
+
+.circle {
+  background: red;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+.card {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  max-width: 400px;
+
+  font-size: 20px;
+
+  & > .card-header > img {
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  & > .card-title {
+    text-decoration: underline;
+  }
+
+  & > .card-cost {
+    font-weight: 600;
+  }
+
+  & > .card-place {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+#tea,
+#dishes {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.order {
+  max-width: 100dvw;
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 20px;
+  background: #435058;
+  padding: 40px;
+  color: white;
+
+  & > h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  & > h2 {
+    width: min-content;
+    margin-bottom: 0;
+  }
+
+  & > input,
+  button {
+    max-width: 400px;
+    width: 400px;
+  }
+}
+
+.input {
+  height: 34px;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+}
+
+.submitter {
+  height: 34px;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #000000;
+}

@@ -6,9 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "doc": "node ./modules/convert.js -f README.md -c ./jsdoc.json -h 'Кизменко А. В., ИС-31, Практическая работа № 6'"
   },
   "devDependencies": {
+    "jsdoc": "^4.0.4",
+    "jsdoc-md": "^11.0.2",
+    "jsdoc-to-markdown": "^9.1.1",
     "vite": "^6.3.1"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "docdown": "^0.7.3"
   }
 }

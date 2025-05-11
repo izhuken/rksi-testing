@@ -7,7 +7,7 @@
  * @param {string} params.title - Название товара.
  * @param {string} params.place - Место, где можно купить товар.
  * @param {string} params.cost - Стоимость товара.
- * @returns {string} HTML-код карточки с информацией о товаре.
+ * @returns string HTML-код карточки с информацией о товаре.
  */
 export const CardView = ({ image, title, place, cost }) => `
     <div class="card">

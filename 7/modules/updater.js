@@ -14,13 +14,18 @@ export class FileUpdater {
   update() {
     exec(this.command, (_, stdout) => {
       const result = stdout.replace(/\n/g, " ").replace(/"\[.+\]"/g, '""');
-      const jsonResult = JSON.parse(result).filter((x) => !x.undocumented);
 
-      jsonResult.forEach((element) => {
-        if (this.isPackage(element)) return;
+      JSON.parse(result)
+        .filter(
+          (obj, index, self) =>
+            index === self.findIndex(({ name }) => name === obj.name) &&
+            !obj.undocumented
+        )
+        .forEach((element) => {
+          if (this.isPackage(element)) return;
 
-        this.doc += this.template(element);
-      });
+          this.doc += this.template(element);
+        });
 
       writeFile(this.options.file, this.doc, () => {});
       this.reset();
